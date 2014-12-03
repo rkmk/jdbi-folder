@@ -17,7 +17,6 @@ public class DaoTest {
     }
 
     private static DBI getDBI() {
-<<<<<<< HEAD
         String db = System.getProperty("db");
         if (db.equals("postgres"))
             return new DBI("jdbc:postgresql://localhost:5432/jdbi", "postgres", "");
@@ -25,9 +24,6 @@ public class DaoTest {
             return new DBI("jdbc:mysql://localhost/jdbi", "root", "");
         }
         return null;
-=======
-        return System.getProperty("db").equals("postgres") ? new DBI("jdbc:postgresql://localhost:5432/jdbi", "postgres", "") : new DBI("jdbc:mysql://localhost/jdbi", "root", "");
->>>>>>> Running test against mysql
     }
 
     static {
